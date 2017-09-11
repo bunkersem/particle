@@ -1,0 +1,9 @@
+.particle {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    transform: perspective(500px) translate3d(40px,40px,0);
+    box-shadow: 0 0 2px 1px white, 0 0 4px 6px rgb(254, 91, 222), 0 0 4px 10px rgb(187, 192, 254);
+}
