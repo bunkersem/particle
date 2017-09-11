@@ -1,9 +1,136 @@
+.particles {
+    overflow: hidden;
+}
 .particle {
     width: 2px;
     height: 2px;
     border-radius: 50%;
     background: white;
     position: absolute;
-    transform: perspective(500px) translate3d(40px,40px,0);
-    box-shadow: 0 0 2px 1px white, 0 0 4px 6px rgb(254, 91, 222), 0 0 4px 10px rgb(187, 192, 254);
+    animation: ParticleAnimation 400s linear 0s infinite forwards;
+    opacity: 0.5;
+}
+.particle:nth-of-type(5n+1) {
+    transform: perspective(500px);
+    box-shadow: 0 0 4px 2px white, 0 0 4px 6px rgb(254, 91, 222), 0 0 4px 10px rgb(225, 227, 255);
+}
+.particle:nth-of-type(5n+2) {
+    box-shadow: 0 0 4px 4px white, 0 0 4px 7px rgb(254, 91, 222), 0 0 4px 11px rgb(222, 300, 255);
+}
+.particle:nth-of-type(5n+3) {
+    box-shadow: 0 0 4px 1px #FBECEC, 0 0 4px 5px rgb(222, 121, 202), 0 0 4px 11px rgb(198, 255, 255);
+}
+.particle:nth-of-type(5n+4) {
+    box-shadow: 0 0 4px 2px #F8FFF0, 0 0 4px 7px rgb(255, 208, 212), 0 0 4px 9px rgb(207, 253, 242);
+}
+.particle:nth-of-type(5n+5) {
+    box-shadow: 0 0 4px 2px #F8FFF0, 0 0 4px 7px rgb(244, 129, 212), 0 0 4px 9px rgb(207, 253, 242);
+}
+.particle:nth-of-type(9n+1) {
+    top: 0;
+    left: 0;
+}
+.particle:nth-of-type(9n+2) {
+    top: 14vh;
+    left: 22vw;
+}
+.particle:nth-of-type(9n+3) {
+    top: -40vh;
+    left: 30vw;
+}
+.particle:nth-of-type(10n+4) {
+    top: -12vh;
+    left: 25vw;
+}
+.particle:nth-of-type(9n+5) {
+    top: 4vh;
+    left: -13vw;
+}
+.particle:nth-of-type(9n+6) {
+    top: 8vh;
+    left: 19vw;
+}
+.particle:nth-of-type(9n+7) {
+    top: -14vh;
+    left: -22vw;
+}
+.particle:nth-of-type(9n+8) {
+    top: 12vh;
+    left: 9vw;
+}
+.particle:nth-of-type(9n+9) {
+    top: -30vh;
+    left: -26vw;
+}
+.particle:nth-of-type(13n+1) {
+    animation-delay: 0s;
+}
+.particle:nth-of-type(13n+2) {
+    animation-delay: -360s;
+}
+.particle:nth-of-type(13n+3) {
+    animation-delay: -254s;
+}
+.particle:nth-of-type(13n+4) {
+    animation-delay: -134s;
+}
+.particle:nth-of-type(13n+5) {
+    animation-delay: -12s;
+}
+.particle:nth-of-type(13n+6) {
+    animation-delay: -312s;
+}
+.particle:nth-of-type(13n+7) {
+    animation-delay: -215s;
+}
+.particle:nth-of-type(13n+8) {
+    animation-delay: -179s;
+}
+.particle:nth-of-type(13n+9) {
+    animation-delay: -145s;
+}
+.particle:nth-of-type(13n+10) {
+    animation-delay: -112s;
+}
+.particle:nth-of-type(13n+11) {
+    animation-delay: -86s;
+}
+.particle:nth-of-type(13n+12) {
+    animation-delay: -138s;
+}
+.particle:nth-of-type(13n+13) {
+    animation-delay: -314s;
+}
+
+@keyframes ParticleAnimation {
+    0% { transform: translate3d(90vw, 40vw,0); }
+    5% { transform: translate3d(70vw, 50vw,0); }
+    10% { transform: translate3d(60vw, 65vw,0); }
+    15% { transform: translate3d(58vw, 66vw,0); }
+    20% { transform: translate3d(55vw, 62vw,0); }
+    25% { transform: translate3d(39vw, 67vw,0); }
+    27% { transform: translate3d(39vw, 76vw,0); }
+    30% { transform: translate3d(20vw, 80vw,0); }
+    35% { transform: translate3d(14vw, 65vw,0); }
+    37% { transform: translate3d(11vw, 62vw,0); }
+    40% { transform: translate3d(13vw, 43vw,0); }
+    45% { transform: translate3d(11vw, 41vw,0); }
+    50% { transform: translate3d(15vw, 20vw,0); }
+    55% { transform: translate3d(34vw, 5vw,0); }
+    57% { transform: translate3d(45vw, 12vw,0); }
+    60% { transform: translate3d(42vw, 28vw,0); }
+    62% { transform: translate3d(59vw, 39vw,0); }
+    65% { transform: translate3d(60vw, 49vw,0); }
+    67% { transform: translate3d(61vw, 47vw,0); }
+    70% { transform: translate3d(69vw, 55vw,0); }
+    72% { transform: translate3d(76vw,66vw,0); }
+    75% { transform: translate3d(72vw, 67vw,0); }
+    78% { transform: translate3d(65vw, 87vw,0); }
+    80% { transform: translate3d(70vw, 84vw,0); }
+    85% { transform: translate3d(74vw, 82vw,0); }
+    90% { transform: translate3d(76vw, 84vw,0); }
+    92% { transform: translate3d(80vw, 73vw,0); }
+    95% { transform: translate3d(84vw, 64vw,0); }
+    97% { transform: translate3d(84vw, 60vw,0); }
+    100% { transform: translate3d(86vw, 52vw,0); }
 }
